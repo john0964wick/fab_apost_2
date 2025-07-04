@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head><title>FB Auto Poster Dashboard</title></head>
+<body>
+<h2>📊 Posting Activity</h2>
+<table border="1">
+<tr><th>Keyword</th><th>Posts</th><th>Last Posted</th></tr>
+{% for kw, count, last in data %}
+<tr><td>{{ kw }}</td><td>{{ count }}</td><td>{{ last }}</td></tr>
+{% endfor %}
+</table>
+</body>
+</html>
